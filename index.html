@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>signup form</title>
+  </head>
+  <body>
+    <div id="img-container">
+      <img
+        src="./images/bg.jpg"
+        alt="a dark fantasy world where wales are flying in the dark sky"
+      />
+      <div id="img-text">
+        <img id="odin-img" src="images/odin.png" alt="The odin project logo" />
+        <p>ODIN</p>
+      </div>
+    </div>
+    <div id="txt-container">
+      <div class="top-content">
+        <p class="top-txt">
+          Need help? Don't hesitate to reach out! whenever and wherever you need
+          it. Your satisfaction is our priority, and we're just a message away!
+        </p>
+        <p class="top-txt">"The help you know you need."</p>
+      </div>
+      <div class="mid-content">
+        <h2>Lets Do This!</h2>
+        <form action="/" method="post">
+          <div class="form-fields">
+            <label for="first_name">First Name</label>
+            <input type="text" name="first_name" id="first_name" required />
+          </div>
+          <div class="form-fields">
+            <label for="last_name">Last Name</label>
+            <input type="text" name="last_name" id="last_name" required />
+          </div>
+          <div class="form-fields">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required />
+          </div>
+          <div class="form-fields">
+            <label for="phone_num">Phone Number</label>
+            <input
+              type="tel"
+              name="phone_num"
+              id="phone_num"
+              minlength="9"
+              maxlength="10"
+              required
+            />
+          </div>
+          <div class="form-fields">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              minlength="6"
+              required
+            />
+            <p class="error">*Password doesn't match</p>
+          </div>
+          <div class="form-fields">
+            <label for="conform_password">Conform Password</label>
+            <input
+              type="password"
+              name="conform_password"
+              id="conform_password"
+              minlength="6"
+              required
+            />
+          </div>
+        </form>
+      </div>
+      <div class="bottom-content">
+        <button type="submit" id="btn">Create Account</button>
+        <p id="login">Already have an account? <a href="">LogIn</a></p>
+      </div>
+    </div>
+  </body>
+</html>
